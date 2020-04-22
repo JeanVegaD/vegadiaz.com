@@ -1,0 +1,51 @@
+<div class="home_banner">
+    <nav class="navbar navbar-expand-md navBar_style wow fadeInDown " style="visibility: hidden;" >
+        <!-- Logo -->
+        <div class="img_logo_container">
+            <img src="../../../../assets/img/logos/logo_main_light.png" class="img_size " />
+        </div>  
+        
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler navText" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <i class='fas fa-bars'></i>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav navBar_content ml-auto" >
+            <li class="nav-item navText" id="navResume">
+                <a class="nav-link" (click)="scrollToSoft()">Soft skills</a>
+            </li>
+            <li class="nav-item navText" id="navResume">
+                <a class="nav-link" (click)="scrolltoActivities()">Extracurricular activities</a>
+            </li> 
+            <li class="nav-item navText" id="navResume">
+                <a class="nav-link" (click)="scrollToProjects()">Projects</a>
+            </li> 
+            <li class="nav-item navText" id="navContact">
+                <a class="nav-link" (click)="scrollToContact()">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="logoMobile wow fadeInDown" style="visibility: hidden;">
+        <div class="img_logo_container mx-auto">
+            <img src="../../../../assets/img/logos/logo_main_light.png" class="img_size" />
+        </div>
+    </div>
+    <div class="row row-padding" style="height: 90vh;">
+        <div class="col-md-8 my-auto">
+            <div class="left_container mx-auto wow fadeInUp" style="visibility: hidden;">
+                <h1 class="name_text" id="lbl_Nombre">Hi, I'm Jean</h1>
+                <p class="summary_text">{{resumen}}</p>
+                <div class="wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden;">
+                    <a href="https://www.linkedin.com/in/jean-vega-díaz-905480192" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://www.instagram.com/jeanvegad/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.facebook.com/jeanvegad " target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/jeanvegad" target="_blank" class="fa fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

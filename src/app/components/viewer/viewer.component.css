@@ -1,0 +1,104 @@
+
+/*Banner principal del Home Page================================================*/
+
+.navBar_style{
+    height: 10vh;
+    background-color: white;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-bottom: solid 1px #f5f5f5;
+    -webkit-box-shadow: 2px 5px 32px -9px rgba(224,224,224,1);
+    -moz-box-shadow: 2px 5px 32px -9px rgba(224,224,224,1);
+    box-shadow: 2px 5px 32px -9px rgba(224,224,224,1);
+
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.img_logo_container{
+    width: 6%;
+}
+
+.img_size{
+    width: 100%;
+}
+
+
+.navText{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--color-main-dark);
+    cursor: pointer;
+}
+
+a{
+    color: var(--color-main-dark);
+}
+
+a:hover{
+    color: var(--color-element1);
+}
+
+.left_container{
+    width: 100%;
+
+}
+
+.pdf{
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+/*No disponible screen*/
+
+.bigTitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    color: var(--color-main-dark);
+    text-align: center;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size:30px;
+    color: var(--color-main-dark);
+    text-align: center;
+}
+
+.subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-main-dark);
+    text-align: center;
+}
+
+.referencia{
+    font-weight: bold;
+}
+
+.referencia:hover{
+    font-size: 25px;
+}
+
+
+
+#noDisponible{
+    display: none;
+}
+
+@media screen and (max-width: 760px)  {
+    #body{
+        display: none;
+    }
+
+    #noDisponible{
+        display: inline;
+    }
+}

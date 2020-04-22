@@ -1,0 +1,258 @@
+<head> <meta http-equiv=”Content-Type” content=”text/html; charset=ISO-8859-1″ /></head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div id="body">
+    <div class="home_banner">
+        <nav class="navbar navbar-expand-md navBar_style wow fadeInDown " style="visibility: hidden;" >
+            <!-- Logo -->
+            <div class="img_logo_container">
+                <img src="../../../../assets/img/logos/logo_main_light.png" class="img_size " />
+            </div>  
+            
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler navText" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class='fas fa-bars'></i>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav navBar_content ml-auto" >
+                <li class="nav-item navText" id="navResume">
+                    <a class="nav-link" (click)="scrolltoEducation()">Education</a>
+                </li>
+                <li class="nav-item navText" id="navResume">
+                    <a class="nav-link" (click)="scrolltoCertification()">Certifications</a>
+                </li>
+                <li class="nav-item navText" id="navResume">
+                    <a class="nav-link" (click)="scrolltoJob()">Job Experience</a>
+                </li> 
+                <li class="nav-item navText" id="navResume">
+                    <a class="nav-link" (click)="scrolltoProjects()">Projects</a>
+                </li> 
+                
+                <li class="nav-item navText" id="navContact">
+                    <a class="nav-link" (click)="scrollToContact()">Contact</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <div class="logoMobile wow fadeInDown" style="visibility: hidden;">
+            <div class="img_logo_container mx-auto">
+                <img src="../../../../assets/img/logos/logo_main_light.png" class="img_size" />
+            </div>
+        </div>
+        <div class="row row-padding" style="height: 90vh;">
+            <div class="col-md-8 my-auto">
+                <div class="left_container mx-auto wow fadeInUp" style="visibility: hidden;">
+                    <h1 class="name_text" id="lbl_Nombre">Hi, I'm Joanka</h1>
+                    <p class="summary_text">{{description}}</p>
+                    <div class="contendorSocial  wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden;">
+                        <a href="https://www.linkedin.com/in/joanka-vega-1b90b4186" target="_blank" class="fa fa-linkedin"></a>
+                        <a href="https://www.instagram.com/joankavega/" target="_blank" class="fa fa-instagram"></a>
+                        <a href="https://www.facebook.com/joankavega" target="_blank" class="fa fa-facebook"></a>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="col-">
+            </div>
+        </div>
+    </div>
+
+    <div id="div_education">
+        <div class="row row-padding row-white" >
+            <div class="col-12">
+                <div style="display: flex">
+                    <div class="titleSquare wow fadeInDown"></div>
+                    <div class="titleSquare2 my-auto">
+                        <h1 class="titleSection wow fadeInRight" data-wow-delay="0.1s" style="visibility: hidden;">Education</h1>
+                    </div>
+                </div>
+               <br>
+               <br>
+               <div class="row">
+                    <div class="col-md-6 styleCol wow zoomIn" data-wow-delay="0.2s" style="visibility: hidden;">
+                        <div class="cardShadow"> 
+                            <h1 class="subtitleSection">{{educacion[0].nombre}}</h1>
+                            <h1 class="textSection">{{educacion[0].lugar}}</h1>
+                            <h1 class="textSection">{{educacion[0].anno}}</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 styleCol wow zoomIn" data-wow-delay="0.3s" style="visibility: hidden;">
+                        <div class="cardShadow"> 
+                            <h1 class="subtitleSection">{{educacion[1].nombre}}</h1>
+                            <h1 class="textSection">{{educacion[1].lugar}}</h1>
+                            <h1 class="textSection">{{educacion[1].anno}}</h1>
+                        </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+    </div>
+
+    <div id="div_certifications">
+        <div class="row row-padding row-light" >
+            <div class="col-12">
+                <div style="display: flex">
+                    <div class="titleSquare wow fadeInDown"></div>
+                    <div class="titleSquare2 my-auto">
+                        <h1 class="titleSection wow fadeInRight" data-wow-delay="0.1s" style="visibility: hidden;">Certifications</h1>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                     <div class="col-md-6 styleCol wow zoomIn " data-wow-delay="0.2s" style="visibility: hidden;">
+                        <div class="cardShadow">  
+                            <h1 class="subtitleSection">{{certificaciones[0].nombre}}</h1>
+                            <h1 class="textSection">{{certificaciones[0].lugar}}</h1>
+                        </div>
+                     </div>
+                     <div class="col-md-6 styleCol wow zoomIn " data-wow-delay="0.3s" style="visibility: hidden;">
+                        <div class="cardShadow">  
+                            <h1 class="subtitleSection">{{certificaciones[1].nombre}}</h1>
+                            <h1 class="textSection">{{certificaciones[1].lugar}}</h1>  
+                        </div>
+                     </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div id="div_job">
+        <div class="row row-padding row-white" >
+            <div class="col-12">
+                <div style="display: flex">
+                    <div class="titleSquare wow fadeInDown"></div>
+                    <div class="titleSquare2 my-auto">
+                        <h1 class="titleSection wow fadeInRight" data-wow-delay="0.1s" style="visibility: hidden;">Job Experience</h1>
+                    </div>
+                </div>
+               <br>
+               <br>
+               <div class="row">
+                    <div class="col-md-6 styleCol wow zoomIn" data-wow-delay="0.2s" style="visibility: hidden;">
+                        <div class="cardShadow">
+                            <h1 class="subtitleSection">{{jobs[0].nombre}}</h1>
+                            <h1 class="textSection">{{jobs[0].lugar}}</h1>
+                            <br>
+                            <h1 class="textSection"><b>Tasks:</b></h1>
+                            <ul>
+                                <li class="textPlaceResume">{{jobs[0].tasks[0]}}</li>
+                                <li class="textPlaceResume">{{jobs[0].tasks[1]}}</li>
+                                <li class="textPlaceResume">{{jobs[0].tasks[2]}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 styleCol wow zoomIn" data-wow-delay="0.2s" style="visibility: hidden;">
+                        <div class="cardShadow">
+                            <h1 class="subtitleSection">{{jobs[1].nombre}}</h1>
+                            <h1 class="textSection">{{jobs[1].lugar}}</h1>
+                            <br>
+                            <h1 class="textSection"><b>Tasks:</b></h1>
+                            <ul>
+                                <li class="textPlaceResume">{{jobs[1].tasks[0]}}</li>
+                                <li class="textPlaceResume">{{jobs[1].tasks[1]}}</li>
+                                <li class="textPlaceResume">{{jobs[1].tasks[2]}}</li>
+                            </ul>
+                        </div>
+                    </div>
+               </div>
+
+            </div>
+         </div>
+    </div>
+    <div id="div_projects">
+        <div class="row row-padding row-light" >
+            <div class="col-12">
+                <div style="display: flex">
+                    <div class="titleSquare wow fadeInDown"></div>
+                    <div class="titleSquare2 my-auto">
+                        <h1 class="titleSection wow fadeInRight" data-wow-delay="0.1s" style="visibility: hidden;">Projects</h1>
+                    </div>
+                </div>
+               <br>
+               <br>
+               <div class="row">
+                    <div class="col-md-6  styleCol wow zoomIn" data-wow-delay="0.2s" style="visibility: hidden;" >
+                        <div class="cardShadow">
+                            <div class="img_logoProjecto mx-auto">
+                                <img src="../../../../assets/img/ba_images/logo_iniciativas_dark.png" id="img_inciativas" class="img_size my-auto " />
+                            </div>  
+                            <h1 class="textSection">{{actividades[0].descripcion}}</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 styleCol wow zoomIn" data-wow-delay="0.3s" style="visibility: hidden;">
+                        <div class="cardShadow">
+                            <div class="img_logoProjecto mx-auto">
+                                <img src="../../../../assets/img/ba_images/logo_yuquitica_dark.png" id="img_yuquiticas" class="img_size " />
+                            </div>  
+                            <h1 class="textSection">{{actividades[1].descripcion}}</h1>
+                        </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+    </div>
+    <div class="division_banner">
+        <div class="row row-padding" style="height: 90vh;">
+            <div class="col-md-12 my-auto wow fadeInUp" style="visibility: hidden;">
+                <div class="left_container mx-auto animated fadeInUp">
+                    <h1 class="phrase_text ">{{frase1}}</h1>
+                    <p class="autor_text">{{autor1}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div_contact">
+        <div class="row row-padding row-white" >
+            <div class="col-12">
+                <div style="display: flex">
+                    <div class="titleSquare wow fadeInDown"></div>
+                    <div class="titleSquare2 my-auto">
+                        <h1 class="titleSection wow fadeInRight" data-wow-delay="0.1s" style="visibility: hidden;">Lets talk</h1>
+                    </div>
+                </div>
+               <br>
+               <br>
+               <div class="formStyle my-auto mx-auto animated fadeInUp">                    
+                <br>
+                <div id="alertMail">
+                    
+                </div>
+                <div class="input-group mb-2 wow zoomIn" data-wow-delay="0.2s" style="visibility: hidden;">
+                    <h1 class="inputLabelStyle animated fadeInDown">Name </h1>
+                    <input type="text" class="inputStyle"  [(ngModel)]="e_nombre" />
+                </div>
+                <div class="input-group mb-2 wow zoomIn" data-wow-delay="0.3s" style="visibility: hidden;">
+                    <h1 class="inputLabelStyle animated fadeInDown">Email </h1>
+                    <input type="text" class="inputStyle"  [(ngModel)]="e_email" />
+                </div>
+                <div class="input-group mb-2 wow zoomIn" data-wow-delay="0.4s" style="visibility: hidden;">
+                    <h1 class="inputLabelStyle animated fadeInDown">Subject </h1>
+                    <input type="text" class="inputStyle"  [(ngModel)]="e_asunto" />
+                </div>
+                <div class="input-group mb-2 wow zoomIn" data-wow-delay="0.5s" style="visibility: hidden;">
+                    <h1 class="inputLabelStyle animated fadeInDown">Message </h1>
+                    <textarea type="text" class="inputStyle" [(ngModel)]="e_mensaje"></textarea>
+                </div>
+                <button class="boton_enviar wow zoomIn" id="btn_enviar" data-wow-delay="0.6s" style="visibility: hidden;" (click)="enviarCorreo()">
+                    <i class="fab fa-telegram-plane"></i> Submit
+                </button>
+
+                    
+            </div>
+            </div>
+         </div>
+    </div>
+    <div class="row row-padding row-footer ">
+        <div class="img_logo_container mx-auto">
+            <img src="../../../../assets/img/logos/logo_main_dark.png" class="img_size" />
+        </div>
+    </div>
+    
+</div>
+
+<div id="turn">
+    <app-turn-page></app-turn-page>
+</div>

@@ -1,0 +1,448 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#body{
+    padding: 0;
+    margin: 0;
+}
+
+/*Banner principal del Home Page================================================*/
+
+.navBar_style{
+    height: 10vh;
+    background-color: transparent;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: none;
+
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.img_logo_container{
+    width: 6%;
+}
+
+.img_size{
+    width: 100%;
+}
+
+
+.navText{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--color-main-white);
+    cursor: pointer;
+}
+
+.navText:hover{
+    font-weight: bold;
+    color: var(--color-main-white);
+}
+
+.navText-active{
+    font-weight: bold;
+    color: var(--color-main-white);
+}
+
+
+.home_banner{    
+    height: 100vh;
+    background-image: url(/../../../../assets/img/se_images/banner_se_2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--color-main-light);   
+}
+
+.logoMobile{
+    padding-top: 20px;
+    background-color: transparent;
+    display: none;
+}
+
+.left_container{
+    width: 100%;
+
+}
+
+
+
+/*Textos========================================================================*/
+
+
+.name_text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    color: var(--color-main-white);
+    text-align: left;
+}
+
+.summary_text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: var(--color-main-white);
+    text-align: left;
+}
+
+
+.titleSquare{
+    width: 7px;
+    height: 50px;
+    background-image: linear-gradient(to top, #37ecba 0%, #0093e9 100%);
+    margin-right: 10px;
+}
+
+.titleSection{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--color-main-dark);
+    text-align: left;
+
+}
+
+
+
+.textSection{
+    margin: 0;
+    padding: 0;
+}
+
+.subtitleSection{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--color-main-dark);
+    text-align: left;
+}
+
+.textSection{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--color-main-dark);
+    text-align: justify;
+}
+
+.textPlaceResume{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--color-main-dark);
+    text-align: left;
+}
+
+
+.phrase_text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: var(--color-main-light);
+    text-align: left;
+}
+
+.autor_text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--color-main-light);
+    text-align: left;
+}
+
+
+
+/*Rows==========================================================================*/
+
+.row-padding{
+    padding: 0;
+    margin: 0;
+
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.row-white{
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.row-light{
+    background-color: var(--color-main-light);
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+
+.img_logoProjecto{
+    width: 40%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.cardShadow{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 35px;
+    cursor: pointer;
+    transition: transform .5s ease;
+
+    background-color:var(--color-main-white);
+
+    border: solid 1px #f5f5f5;
+    -webkit-box-shadow: 2px 5px 32px -9px rgba(224,224,224,1);
+    -moz-box-shadow: 2px 5px 32px -9px rgba(224,224,224,1);
+    box-shadow: 2px 5px 32px -9px rgba(224,224,224,1); 
+}
+
+.cardShadow:hover {
+    transform: scale(1.03);
+
+}
+
+
+
+
+.styleCol{
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+}
+
+/*Iconos=========================================================================*/
+
+.fa {
+    padding: 10px;
+    width: 50px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color:transparent;
+    color: var(--color-main-light);
+  }
+  
+  
+.fa-facebook:hover {
+    color: #3B5998;
+    background: white;
+}
+  
+  .fa-twitter:hover {
+    color: #55ACEE;
+    background: white;
+  }
+
+  .fa-linkedin:hover {
+    color: #007bb5;
+    background: white;
+  }
+
+  .fa-instagram:hover {
+    color: #125688;
+    background: white;
+  }
+
+/*Frase division====================================================================*/
+
+  .division_banner{
+    height: 80vh;
+    background-image: url(/../../../../assets/img/se_images/banner_se_1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646; 
+}
+
+/*Forumlarios====================================================================*/
+
+.formStyle{
+    width: 100%;
+}
+
+.inputLabelStyle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: var(--color-main-dark);
+    text-align: left;
+}
+
+.inputStyle{
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px var(--color-main-dark);
+
+    color: var(--color-main-dark);
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: left;
+}
+
+.inputStyle:focus{
+    outline: none;
+    border-bottom: solid 1px var(--color-main-dark);
+}
+
+
+.boton_enviar{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-element1);
+    color: var(--color-main-light);
+    width: 100%;
+  
+    margin-top: 5px;
+    /*background-image: linear-gradient(80deg, #37ecba 0%, #0093e9 100%);*/
+}
+
+
+.boton_enviar:hover{
+    opacity: 0.8;
+}
+
+/*Footer====================================================================*/
+.row-footer{
+    
+    background-color: var(--color-main-light);
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    /*
+    background-image: linear-gradient(80deg, #37ecba 0%, #72afd3 100%);*/
+
+}
+
+#turn{
+    display: none;
+}
+
+
+/*Responsive====================================================================*/
+@media screen and (max-width: 760px)  {
+
+    .logoMobile{
+        display: block;
+    }
+
+    .navBar_style{
+        display: none;
+    }
+
+    .home_banner{
+        height: 100%;
+    }
+
+    .name_text{
+        font-size: 40px;
+    }
+
+    .summary_text{
+        font-size: 20px;
+    }
+
+    .fa{
+        padding: 5px;
+        width: 30px;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+
+    .phrase_text{
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .autor_text{
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .col-left,.col-right{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .row-padding{
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+
+    .titleSection{
+        font-size: 30px;
+    }
+
+    .subtitleSection{
+        font-size: 20px;
+    }
+
+    .textSection{
+        font-size: 15px;
+    }
+
+    .textPlaceResume{
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .inputLabelStyle{
+        font-size: 20px;
+    }
+
+    .inputStyle{
+        font-size: 15px;
+    }
+
+    .boton_enviar{
+       
+        font-size: 15px;
+        padding: 10px;
+    
+    }
+
+    .img_logo_container{
+        width: 15%;
+    }
+
+    .titleSquare{
+        height: 40px;
+    }
+
+    .cardShadow{
+        padding: 30px;
+    }
+}
+
+
+
+@media screen and (max-height: 500px)  {
+    #body{
+        display: none;
+    }
+
+    #turn{
+        display: inline;
+    }
+    
+}

@@ -1,0 +1,62 @@
+
+
+.carrousel{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+
+
+
+.carrousel-card{
+    flex: 0 0 auto;
+    white-space: normal;
+    width: 40%;
+    height: inherit;  
+    background-color:var(--color-main-white);
+    border-radius: 15px;
+    padding: 35px;
+
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+
+    -webkit-box-shadow: -1px 18px 55px -23px rgba(0,0,0,0.39);
+    -moz-box-shadow: -1px 18px 55px -23px rgba(0,0,0,0.39);
+    box-shadow: -1px 18px 55px -23px rgba(0,0,0,0.39);
+
+}
+
+
+
+.carrousel::-webkit-scrollbar {
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: block;  /* Ocultar scroll */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.carrousel::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(90deg, #37ecba 0%, #0093e9 100%);
+    border-radius: 4px;
+}
+
+
+
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.carrousel::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+
+
+@media screen and (max-width: 900px)  {
+
+    .carrousel-card{
+        width: 80%;
+    }
+}
+
+  

@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "vegadiaz",
+    "public": "./dist/JAVD",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

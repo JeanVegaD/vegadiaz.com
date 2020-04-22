@@ -1,0 +1,50 @@
+
+
+
+.leftpadding{
+    padding-left: 10px;
+}
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--color-main-dark);
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.subtitulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--color-main-dark);
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+.enlaces{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--color-main-dark);
+    text-align: left;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--color-main-dark);
+    text-align: left;
+}
+
+.img{
+
+}
+
+.divs{
+    padding-top: 15px;
+}

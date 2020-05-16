@@ -22,29 +22,33 @@
   <!--iconos-->
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
-
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyABMy7iaReYekdvd2BjdhQ9GRn4BgmSr00",
-      authDomain: "javd-7fa5a.firebaseapp.com",
-      databaseURL: "https://javd-7fa5a.firebaseio.com",
-      projectId: "javd-7fa5a",
-      storageBucket: "javd-7fa5a.appspot.com",
-      messagingSenderId: "381629156447",
-      appId: "1:381629156447:web:58723d553653977b18dfea"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-  </script>
+  
 
 </head>
 <body>
   <app-root></app-root>
 </body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyABMy7iaReYekdvd2BjdhQ9GRn4BgmSr00",
+    authDomain: "javd-7fa5a.firebaseapp.com",
+    databaseURL: "https://javd-7fa5a.firebaseio.com",
+    projectId: "javd-7fa5a",
+    storageBucket: "javd-7fa5a.appspot.com",
+    messagingSenderId: "381629156447",
+    appId: "1:381629156447:web:58723d553653977b18dfea",
+    measurementId: "G-V3Z0BZKWS8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </html>

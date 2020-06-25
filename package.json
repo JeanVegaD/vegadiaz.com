@@ -21,7 +21,7 @@
     "@angular/router": "~8.2.14",
     "@types/jquery": "^3.3.32",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng2-pdf-viewer": "^6.2.0",
     "ngx-drag-scroll": "^8.0.0-beta.2",
     "ngx-wow": "^2.0.1",

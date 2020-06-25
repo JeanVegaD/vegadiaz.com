@@ -8,14 +8,11 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { SeResumeComponent } from './components/SE/se-resume/se-resume.component';
-import { BaResumeComponent } from './components/BA/ba-resume/ba-resume.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgwWowModule } from 'ngx-wow';
 import { NotFoundPageComponent } from './components/config_pages/not-found-page/not-found-page.component';
 import { TurnPageComponent } from './components/config_pages/turn-page/turn-page.component';
-import { TitleRowComponent } from './components/componentes-pagina/title-row/title-row.component';
 import { JeanPageComponent } from './components/jean/jean-page/jean-page.component';
 
 import { JeanBannerPrincipalComponent } from './components/jean/jean-banner-principal/jean-banner-principal.component';
@@ -29,17 +26,22 @@ import { SeparetorComponent } from './components/jean/separetor/separetor.compon
 import { JeanCertificationsComponent } from './components/jean/jean-certifications/jean-certifications.component';
 import { JeanRowAboutComponent } from './components/jean/jean-row-about/jean-row-about.component';
 import { JeanRowAcademicActivitiesComponent } from './components/jean/jean-row-academic-activities/jean-row-academic-activities.component';
+import { JoankaPageComponent } from './components/joanka/joanka-page/joanka-page.component';
+import { JoankaBannerPrincipalComponent } from './components/joanka/joanka-banner-principal/joanka-banner-principal.component';
+import { JoankaEducationComponent } from './components/joanka/joanka-education/joanka-education.component';
+import { JoankaCerticationComponent } from './components/joanka/joanka-certication/joanka-certication.component';
+import { JoankaJobsComponent } from './components/joanka/joanka-jobs/joanka-jobs.component';
+import { JoankaProjectsComponent } from './components/joanka/joanka-projects/joanka-projects.component';
+import { JoankaPhraseComponent } from './components/joanka/joanka-phrase/joanka-phrase.component';
+import { JoankaContactComponent } from './components/joanka/joanka-contact/joanka-contact.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SeResumeComponent,
-    BaResumeComponent,
     NotFoundPageComponent,
     TurnPageComponent,
-    TitleRowComponent,
     JeanPageComponent,
     JeanBannerPrincipalComponent,
     JeanRowSoftSkilssComponent,
@@ -51,7 +53,15 @@ import { JeanRowAcademicActivitiesComponent } from './components/jean/jean-row-a
     SeparetorComponent,
     JeanCertificationsComponent,
     JeanRowAboutComponent,
-    JeanRowAcademicActivitiesComponent
+    JeanRowAcademicActivitiesComponent,
+    JoankaPageComponent,
+    JoankaBannerPrincipalComponent,
+    JoankaEducationComponent,
+    JoankaCerticationComponent,
+    JoankaJobsComponent,
+    JoankaProjectsComponent,
+    JoankaPhraseComponent,
+    JoankaContactComponent
   ],
   imports: [
     BrowserModule,

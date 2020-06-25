@@ -1,0 +1,46 @@
+<div id="div_contact">
+    <div class="row row-padding row-white" >
+        <div class="col-12">
+            <div style="display: flex">
+                <div class="titleSquare wow fadeInDown"></div>
+                <div class="titleSquare2 my-auto">
+                    <h1 class="titleSection wow fadeInRight" data-wow-delay="0.1s" style="visibility: hidden;">Lets talk</h1>
+                </div>
+            </div>
+           <br>
+           <br>
+           <div class="formStyle my-auto mx-auto animated fadeInUp">                    
+            <br>
+            <div id="alertMail">
+                
+            </div>
+            <div class="input-group mb-2 wow zoomIn" data-wow-delay="0.2s" style="visibility: hidden;">
+                <h1 class="inputLabelStyle animated fadeInDown">Name </h1>
+                <input type="text" class="inputStyle"  [(ngModel)]="e_nombre" />
+            </div>
+            <div class="input-group mb-2 wow zoomIn" data-wow-delay="0.3s" style="visibility: hidden;">
+                <h1 class="inputLabelStyle animated fadeInDown">Email </h1>
+                <input type="text" class="inputStyle"  [(ngModel)]="e_email" />
+            </div>
+            <div class="input-group mb-2 wow zoomIn" data-wow-delay="0.4s" style="visibility: hidden;">
+                <h1 class="inputLabelStyle animated fadeInDown">Subject </h1>
+                <input type="text" class="inputStyle"  [(ngModel)]="e_asunto" />
+            </div>
+            <div class="input-group mb-2 wow zoomIn" data-wow-delay="0.5s" style="visibility: hidden;">
+                <h1 class="inputLabelStyle animated fadeInDown">Message </h1>
+                <textarea type="text" class="inputStyle" [(ngModel)]="e_mensaje"></textarea>
+            </div>
+            <button class="boton_enviar wow zoomIn" id="btn_enviar" data-wow-delay="0.6s" style="visibility: hidden;" (click)="enviarCorreo()">
+                <i class="fab fa-telegram-plane"></i> Submit
+            </button>
+
+                
+        </div>
+        </div>
+     </div>
+</div>
+<div class="row row-padding row-footer ">
+    <div class="img_logo_container mx-auto">
+        <img src="../../../../assets/img/logos/logo_main_dark.png" class="img_size" />
+    </div>
+</div>

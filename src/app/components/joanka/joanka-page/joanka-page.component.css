@@ -1,5 +1,15 @@
 
-/*Barra de navegacion*/
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#body{
+    padding: 0;
+    margin: 0;
+}
+
+/*Banner principal del Home Page================================================*/
 
 .navBar_style{
     height: 10vh;
@@ -11,11 +21,7 @@
 
     padding-left: 8vw;
     padding-right: 8vw;
-
-
-
 }
-
 
 .img_logo_container{
     width: 6%;
@@ -44,50 +50,32 @@
     color: var(--color-main-white);
 }
 
-/*Banner principañ*/
 
-.home_banner{
-
-    
+.home_banner{    
     height: 100vh;
     background-image: url(/../../../../assets/img/ba_images/banner_ba_1.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: var(--color-main-light); 
-
-    /*background-image: linear-gradient(to top, #37ecba 0%, #0093e9 100%);*/
-
-   
-
-
+    background-color: var(--color-main-light);   
 }
 
-
-
-.division_banner{
-    height: 80vh;
-    background-image: url(/../../../../assets/img/ba_images/banner_ba_2.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #464646; 
-}
-
-.row-padding{
-    padding: 0;
-    margin: 0;
-
-    padding-left: 8vw;
-    padding-right: 8vw;
+.logoMobile{
+    padding-top: 20px;
+    background-color: transparent;
+    display: none;
 }
 
 .left_container{
     width: 100%;
 
 }
+
+
+
+/*Textos========================================================================*/
+
 
 .name_text{
     font-family: 'Poppins', sans-serif;
@@ -106,24 +94,6 @@
 }
 
 
-
-
-
-.row-white{
-    height: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.row-light{
-    background-color: var(--color-main-light);
-    height: auto;
-    padding-top: 100px;
-    padding-bottom: 110px;
-}
-
-
-
 .titleSquare{
     width: 7px;
     height: 50px;
@@ -138,10 +108,6 @@
     color: var(--color-main-dark);
     text-align: left;
 
-        /*
-    background: -webkit-linear-gradient( #37ecba 0%, #0093e9 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
 }
 
 
@@ -162,7 +128,7 @@
 .textSection{
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
-    font-size: 17px;
+    font-size: 18px;
     color: var(--color-main-dark);
     text-align: justify;
 }
@@ -170,9 +136,9 @@
 .textPlaceResume{
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--color-main-dark);
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -194,12 +160,28 @@
 
 
 
-.styleCol{
-    margin-bottom: 15px;
+/*Rows==========================================================================*/
+
+.row-padding{
+    padding: 0;
+    margin: 0;
+
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
+.row-white{
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
-/*Projectos*/
+.row-light{
+    background-color: var(--color-main-light);
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
 
 .img_logoProjecto{
     width: 40%;
@@ -211,23 +193,35 @@
 .cardShadow{
     width: 100%;
     height: 100%;
-    background-color:var(--color-main-white);
     border-radius: 15px;
     padding: 35px;
-    /*margin: 5px;*/
+    cursor: pointer;
+    transition: transform .5s ease;
+
+    background-color:var(--color-main-white);
 
     border: solid 1px #f5f5f5;
     -webkit-box-shadow: 2px 5px 32px -9px rgba(224,224,224,1);
     -moz-box-shadow: 2px 5px 32px -9px rgba(224,224,224,1);
-    box-shadow: 2px 5px 32px -9px rgba(224,224,224,1);
-    
+    box-shadow: 2px 5px 32px -9px rgba(224,224,224,1); 
+}
+
+.cardShadow:hover {
+    transform: scale(1.03);
+
 }
 
 
 
 
+.styleCol{
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+}
 
-/*Social*/
+/*Iconos=========================================================================*/
+
 .fa {
     padding: 10px;
     width: 50px;
@@ -259,10 +253,20 @@
     color: #125688;
     background: white;
   }
-  
 
-  /*Form contact*/
+/*Frase division====================================================================*/
 
+  .division_banner{
+    height: 80vh;
+    background-image: url(/../../../../assets/img/ba_images/banner_ba_2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646; 
+}
+
+/*Forumlarios====================================================================*/
 
 .formStyle{
     width: 100%;
@@ -314,8 +318,9 @@
     opacity: 0.8;
 }
 
-
+/*Footer====================================================================*/
 .row-footer{
+    
     background-color: var(--color-main-light);
     height: auto;
     padding-top: 25px;
@@ -326,18 +331,12 @@
 
 }
 
-
-.logoMobile{
-    padding-top: 20px;
-    background-color: transparent;
-    display: none;
-}
-
 #turn{
     display: none;
 }
 
 
+/*Responsive====================================================================*/
 @media screen and (max-width: 760px)  {
 
     .logoMobile{
@@ -404,6 +403,7 @@
 
     .textPlaceResume{
         font-size: 15px;
+        text-align: left;
     }
 
     .inputLabelStyle{
@@ -433,6 +433,7 @@
         padding: 30px;
     }
 }
+
 
 
 @media screen and (max-height: 500px)  {

@@ -1,0 +1,19 @@
+
+.wrapper-header{
+  background-color: var(--primary-bg-color);
+  width: 100%;
+}
+
+.header{
+  margin: 0 auto;
+  width: 70%;
+  padding: 100px 0 100px 0;
+}
+
+.headerButtonBox{
+  margin: 20px 0 20px 0;
+}
+
+.headerButtonBox button{
+  margin-right: 15px;
+}

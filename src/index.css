@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+:root {
+  --primary-bg-color: #EBF3F8;
+  --primary-color:  #0F4C75;
+  --secondary-color:  #3282B8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  margin: 0;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 3.75rem;
+  margin: 0;
+}
+
+h3{
+  font-family: 'Poppins', sans-serif;
+}
+
+h4{
+  font-family: 'Poppins', sans-serif;
+}
+
+h5{
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+}
+
+p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.primaryButton{
+
+}
+
+.secondaryButton{
+  padding: 10px 15px 10px 15px; 
+  background-color: transparent;
+  border: solid 1px var(--secondary-color);
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+.secondaryButton:hover{
+  background-color: var(--secondary-color);
+  color: white;
 }

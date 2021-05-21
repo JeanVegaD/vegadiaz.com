@@ -4,10 +4,10 @@
   width: 100%;
 }
 
-.header{
+.wrapper{
   margin: 0 auto;
-  width: 70%;
-  padding: 100px 0 100px 0;
+  width: 1280px;
+  padding: 50px 0 50px 0;
 }
 
 .headerButtonBox{
@@ -16,4 +16,79 @@
 
 .headerButtonBox button{
   margin-right: 15px;
+}
+
+.navbar{
+  display: flex;
+  width: 100%;
+  margin-bottom: 50px;
+  justify-content: flex-end;
+}
+
+.navbar h6{
+  margin-left: 20px;
+  cursor: pointer;
+  
+}
+
+.navbar h6:hover{
+  color: var(--primary-color);
+}
+
+.description{
+  width: 90%;
+}
+
+.vectorBox{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.wrapper-profesional{
+  background-color: var(--secondary-bg-color);
+  width: 100%;
+}
+
+.profesionalBackgroundBox{
+  margin: 50px 0 50px 0
+}
+
+.porfesionalSubtituleBox{
+  display: flex;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.porfesionalSubtituleBox h5{
+  margin-right: 5px;
+}
+
+.porfesionalSubtituleBox svg{
+  margin-top: 6px;
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 1280px) {
+  .wrapper{
+      width: 960px;
+  }
+
+  .description{
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .wrapper{
+      width: 90%;
+  }
+
+  .description{
+    width: 100%;
+  }
+
+  .porfesionalSubtituleBox svg{
+    margin-top: 3px;
+  }
 }

@@ -1,0 +1,57 @@
+.card-root{
+    display: inline-block;
+    border-radius: 5px;
+    height: 500px;
+    width: 400px;
+    background-image: url(https://dcist.com/wp-content/uploads/sites/3/2020/03/blooddonation.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*box-shadow: 1px 1px 21px 8px rgba(202,202,202,0.61);
+    -webkit-box-shadow: 1px 1px 21px 8px rgba(202,202,202,0.61);
+    -moz-box-shadow: 1px 1px 21px 8px rgba(202,202,202,0.61);*/
+}
+
+.card-gradiant{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    background: rgb(15,76,117);
+    background: linear-gradient(0deg, rgba(15,76,117,1) 0%, rgba(15,76,117,0.1) 100%);
+}
+
+.card-content{
+    border-radius: 5px;
+    height: 90%;
+    width: 90%;
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+.card-content h5{
+    width: 100%;
+    color: white;
+    margin: 0;
+}
+
+.card-content p{
+    width: 100%;
+    color: white;
+    text-align: justify;
+    
+}
+
+.card-content .overline{
+    margin-bottom: 15px;
+}
+
+.card-section{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    background-color: aqua;
+}
+
+

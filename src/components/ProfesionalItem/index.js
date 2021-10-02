@@ -1,8 +1,6 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
 
-import '../../styles/profesionalItem.css';
-
 const ProfesionalItem = ({ title, location, year }) => {
 
   return (

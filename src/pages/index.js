@@ -2,10 +2,10 @@ import React from 'react'
 import Box from '@material-ui/core/Box'
 import Grid from '@material-ui/core/Grid'
 import { useMediaQuery } from 'react-responsive'
-import IconButton from '@material-ui/core/IconButton'
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
 
 import ProfesionalItem from '../components/ProfesionalItem'
+import CardSection from '../components/CardSection'
 import vector from '../assets/img/header_vector.png'
 import '../styles/index.css';
 
@@ -49,7 +49,7 @@ const App = () => {
     )
   }
 
-  const ProfesionalBackground  = () => {
+  const ProfesionalBackground = () => {
     return (
       <Box className="wrapper-profesional">
         <Box className="wrapper">
@@ -73,9 +73,9 @@ const App = () => {
                   <ArrowForwardIcon fontSize={isMobile? 'small': 'default'}/>
                 </Box>
                 <ProfesionalItem 
-                  title="Software Developer Intern"
-                  location="EOS Costa Rica"
-                  year="June 2020 - April 2021"
+                  title="QA Automation Developer"
+                  location="Omni Costa Rica"
+                  year="Since June 2021"
                 />
               </Grid>
               <Grid item xs={12} md={4}>
@@ -96,10 +96,23 @@ const App = () => {
     )
   }
 
+  const OpenSourceProjects = () => {
+    return(
+      <Box className="wrapper-projects">
+        <Box className="wrapper">
+          <h4>Open Source Projects</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <CardSection />
+        </Box>
+      </Box>
+    )
+  }
+
   return (
     <Box>
       <Header />
       <ProfesionalBackground />
+      <OpenSourceProjects />
     </Box>
   );
 }

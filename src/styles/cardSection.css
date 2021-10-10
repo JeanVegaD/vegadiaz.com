@@ -1,15 +1,14 @@
 .card-root{
     display: inline-block;
     border-radius: 5px;
-    height: 500px;
+    height: 550px;
     width: 400px;
     background-image: url(https://dcist.com/wp-content/uploads/sites/3/2020/03/blooddonation.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    white-space: pre-wrap;
+    margin-right: 15px;
 
-    /*box-shadow: 1px 1px 21px 8px rgba(202,202,202,0.61);
-    -webkit-box-shadow: 1px 1px 21px 8px rgba(202,202,202,0.61);
-    -moz-box-shadow: 1px 1px 21px 8px rgba(202,202,202,0.61);*/
 }
 
 .card-gradiant{
@@ -19,8 +18,8 @@
     border-radius: 5px;
     height: 100%;
     width: 100%;
-    background: rgb(15,76,117);
-    background: linear-gradient(0deg, rgba(15,76,117,1) 0%, rgba(15,76,117,0.1) 100%);
+    background: rgb(65,105,225);
+    background: linear-gradient(0deg, rgba(65,105,225,0.8141631652661064) 33%, rgba(184,199,244,0.1474964985994398) 100%);
 }
 
 .card-content{
@@ -49,9 +48,31 @@
 }
 
 .card-section{
+    white-space: nowrap;
     overflow-y: hidden;
-    overflow-x: scroll;
-    background-color: aqua;
+    overflow-x: auto;
 }
+
+.card-section .card-root{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* width */
+.card-section::-webkit-scrollbar {
+    height: 10px;
+  }
+  
+  /* Track */
+.card-section::-webkit-scrollbar-track {
+    background-color: var(--primary-bg-color);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+.card-section::-webkit-scrollbar-thumb {
+    background:var(--primary-color);
+    border-radius: 10px;
+  }
 
 

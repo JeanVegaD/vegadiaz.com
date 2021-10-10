@@ -6,6 +6,7 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
 
 import ProfesionalItem from '../components/ProfesionalItem'
 import CardSection from '../components/CardSection'
+import WavesContainer from '../components/WavesContainer'
 import vector from '../assets/img/header_vector.png'
 import '../styles/index.css';
 
@@ -45,6 +46,7 @@ const App = () => {
             </Grid>
           </Box>
         </Box>
+        <WavesContainer />
       </Box>
     )
   }

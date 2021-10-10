@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
 :root {
-  --primary-bg-color: #EBF3F8;
-  --secondary-bg-color: #FAFAFA;
-  --primary-color:  #0F4C75;
-  --secondary-color:  #3282B8;
+  --primary-bg-color: #90A8EE;
+  --secondary-bg-color: #B8C7F4;
+  --primary-color:  #4169E1;
+  --secondary-color:  #6988E7;
+  --text-color:  #757575;
 }
 
 body{
@@ -16,7 +17,7 @@ h1{
   font-weight: bold;
   font-size: 96px;
   letter-spacing: -1.5px;
-  color: var(--primary-color);
+  color: white;
   margin: 0 10px;
 }
 
@@ -25,7 +26,7 @@ h2{
   font-weight: bold;
   font-size: 59px;
   letter-spacing: -0.5px;
-  color: var(--primary-color);
+  color: white;
   margin: 0 0 0.1rem 0;
 }
 
@@ -34,7 +35,7 @@ h3{
   font-weight: bold;
   font-size: 48px;
   letter-spacing: 0px;
-  color: var(--primary-color);
+  color: white;
   margin: 0 0 0.5rem 0;
 }
 
@@ -43,7 +44,7 @@ h4{
   font-weight: 500;
   font-size: 34px;
   letter-spacing: 0.25px;
-  color: var(--primary-color);
+  color:var(--primary-color);
   margin: 0;
 }
 
@@ -52,7 +53,7 @@ h5{
   font-weight: 500;
   font-size: 24px;
   letter-spacing: 0px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin: 0 0 0.5rem 0;
 }
 
@@ -61,7 +62,7 @@ h6{
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.15px;
-  color: var(--secondary-color);
+  color: var(--text-color);
   margin: 0 0 0 0;
 }
 
@@ -70,7 +71,7 @@ p{
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.5px;
-  color: var(--secondary-color);
+  color: var(--text-color);
   margin: 0 0 0.5rem 0;
 }
 
@@ -78,7 +79,7 @@ p{
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.15px;
-  color: var(--secondary-color);
+  color: var(--text-color);
   overflow: hidden;
   white-space: nowrap;  
   text-overflow: ellipsis;
@@ -100,11 +101,11 @@ p{
 
 .secondaryButton{
   padding: 10px 15px 10px 15px; 
-  background-color: transparent;
-  border: solid 1px var(--secondary-color);
+  background-color: white;
+  border: none;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 14px;
   color: var(--secondary-color);
   cursor: pointer;
@@ -114,6 +115,7 @@ p{
 .secondaryButton:hover{
   background-color: var(--secondary-color);
   color: white;
+
 }
 
 @media only screen and (max-width: 1280px) {
